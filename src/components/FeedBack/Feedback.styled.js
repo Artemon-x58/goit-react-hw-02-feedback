@@ -10,10 +10,11 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h2`
   margin: 20px auto 0 auto;
+  text-align: center;
+`;
+export const List = styled.ul`
+  display: flex;
+  gap: 40px;
 `;
 
-export const Good = styled.button``;
-
-export const Neutral = styled.button``;
-
-export const Bad = styled.button``;
+export const Btn = styled.button``;
