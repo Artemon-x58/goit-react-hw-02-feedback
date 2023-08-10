@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Bad, Good, Neutral, Title, Wrapper } from './Feedback.styled';
 
 export const Feedback = ({ add }) => {
@@ -11,4 +11,8 @@ export const Feedback = ({ add }) => {
       <Bad onClick={() => add('bad')}>Bad</Bad>
     </Wrapper>
   );
+};
+
+Feedback.propTypes = {
+  add: PropTypes.func.isRequired,
 };

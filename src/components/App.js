@@ -13,7 +13,7 @@ export class App extends React.Component {
     this.state.good + this.state.neutral + this.state.bad;
 
   countPositiveFeedbackPercentage = () =>
-    ((this.state.good / this.countTotalFeedback()) * 100).toFixed(0);
+    Number(((this.state.good / this.countTotalFeedback()) * 100).toFixed(0));
 
   handleAddScore = type => {
     this.setState(prevState => {
